@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 export default class VideoService{
-    static urlBase = 'http://localhost:8000/api/video';
+    static urlBase = 'http://ec2-3-16-69-198.us-east-2.compute.amazonaws.com/api/video';
     static get(term, pageToken = null){
 
         return axios.get(VideoService.urlBase, {
